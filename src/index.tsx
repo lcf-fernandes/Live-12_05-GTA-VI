@@ -153,6 +153,7 @@ right: "10px",
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -240,6 +241,32 @@ fontSize: "12px",
 		</RN.View>
 	);
 }],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`bodyBtn`],
+          value: [`Click Lido!!!`]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[() =><></>],
 
             args,
           }}/>
