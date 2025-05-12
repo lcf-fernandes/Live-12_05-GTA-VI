@@ -97,6 +97,8 @@ height: "152px",
             styles:[`{
 width: "30px",
 height: "30px",
+aligntitems: "center",
+justifyContent: "center",
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
