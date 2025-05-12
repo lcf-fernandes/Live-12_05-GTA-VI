@@ -161,7 +161,7 @@ right: "10px",
 padding: "10px",
 alignItems: "center",
 position: "absolute",
-top: "200px",
+top: "150px",
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
