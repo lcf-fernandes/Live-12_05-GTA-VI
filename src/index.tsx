@@ -51,6 +51,7 @@ height: "700px",
 
       args,
     }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -148,6 +149,38 @@ right: "10px",
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+padding: "10px",
+alignItems: "center",
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: "#fff",
+fontSize: "20px",
+}`
+          ],
+
+          children: [
+            `ALMOST THERE!`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
