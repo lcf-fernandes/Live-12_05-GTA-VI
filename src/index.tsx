@@ -78,8 +78,8 @@ flex: 1,
       elementsProperties:[{}],
 
       styles:[{
-width: "100%",
-height: "100%",
+width: "270px",
+height: "152px",
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTA%20VI%20Logo.png?alt=media&token=c74d76cb-f7fe-4aa9-b5c5-4da9e20065f5`],
