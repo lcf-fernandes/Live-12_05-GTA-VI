@@ -272,7 +272,7 @@ height: "100px",
 width: "200px",
 height: "50px",
 position: "absolute",
-bottom: "100px",
+bottom: "-100px",
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTAbtnPreOrder.png?alt=media&token=375e0f55-6f66-4608-b9d4-20b007af067b`],
