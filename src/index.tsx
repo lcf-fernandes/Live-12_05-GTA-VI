@@ -268,15 +268,10 @@ height: "100px",
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
-      styles:[
-              {
-                height: "50px",
-                width: "80px",
-                backgroundColor: "#FDFDFD",
-                borderWidth: 2,
-                borderColor: "#EEE"
-              }
-              ],
+      styles:[{
+width: "200px",
+height: "50px",
+}],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTAbtnPreOrder.png?alt=media&token=375e0f55-6f66-4608-b9d4-20b007af067b`],
 
