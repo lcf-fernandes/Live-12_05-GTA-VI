@@ -132,7 +132,7 @@ right: "10px",
 
       largura: "30px",
 
-      preenchimento: ['black'],
+      preenchimento: [`#fff`],
 
       args,
     }}/>],
