@@ -34,20 +34,22 @@ flex: 1,
 alignItems: "center",
 }`],
 
-          screenElements:[() => {
-                  const textStyle = {
-                    fontSize: 20,
-                    color: '#fff2',
-                    textAlign:'center',
-                    maxWidth: 200,
-                    // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
-                  };
+          screenElements:[
 
-                  return (
-                    <RN.Text style={textStyle}>
-                      {'Adicione Elementos nessa tela!'}
-                    </RN.Text>);
-                }],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+ width: "100%",
+ position: "absolute",
+ zIndex: -1,
+height: "800px",
+}],
+
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTAbg.png?alt=media&token=807a5390-b6b3-4e90-ac71-f39e03c04da0`],
+
+      args,
+    }}/>],
 
           functions:[()=>{}],
 
