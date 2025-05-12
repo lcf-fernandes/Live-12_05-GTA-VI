@@ -183,7 +183,8 @@ fontSize: "20px",
 
           args,
 
-        }}/>, (...args:any) => <Elements.Text pass={{
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -201,7 +202,44 @@ fontSize: "12px",
 
           args,
 
-        }}/>],
+        }}/>, () => {
+	const targetDate = '2026-05-26T23:59:59';
+	const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: '00', minutes: '00', seconds: '00' });
+
+	const style_1 = { alignItems: 'center', justifyContent: 'center' };
+	const style_days = { fontSize: 40, fontWeight: 'bold', color: '#fff' };
+	const style_time = { fontSize: 28, color: '#fff' };
+
+	const formatTime = (time) => { 
+		const days = Math.floor(time / (3600 * 24)); 
+		const hours = String(Math.floor((time % (3600 * 24)) / 3600)).padStart(2, '0'); 
+		const minutes = String(Math.floor((time % 3600) / 60)).padStart(2, '0'); 
+		const seconds = String(time % 60).padStart(2, '0'); 
+
+		return { days, hours, minutes, seconds }; 
+	};
+
+	React.useEffect(() => { 
+		const countdown = () => { 
+		const now = new Date().getTime(); 
+		const target = new Date(targetDate).getTime(); 
+		if (isNaN(target)) { 
+			setTimeLeft({ days: 0, hours: '00', minutes: '00', seconds: '00' }); 
+			return; 
+	} 
+		const distance = target - now; if (distance <= 0) { setTimeLeft({ days: 0, hours: '00', minutes: '00', seconds: '00' }); return; } 
+		const timeInSeconds = Math.floor(distance / 1000); 
+		const { days, hours, minutes, seconds } = formatTime(timeInSeconds); setTimeLeft({ days, hours, minutes, seconds }); }; 
+		const intervalId = setInterval(countdown, 1000); return () => clearInterval(intervalId); 
+	}, [targetDate]);
+
+	return (
+		<RN.View style={style_1}>
+			<RN.Text style={style_days}>{timeLeft.days} DAYS</RN.Text>
+			<RN.Text style={style_time}>{timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds} LEFT</RN.Text>
+		</RN.View>
+	);
+}],
 
             args,
           }}/>
