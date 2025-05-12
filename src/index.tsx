@@ -35,6 +35,7 @@ alignItems: "center",
 }`],
 
           screenElements:[
+        
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
@@ -49,7 +50,68 @@ height: "700px",
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTAbg.png?alt=media&token=807a5390-b6b3-4e90-ac71-f39e03c04da0`],
 
       args,
+    }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexdirection: "row",
+alignItems: "center",
+width: "100%",
+backgroundColor: "transparent",
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flex: 1,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: "100%",
+height: "100%",
+}],
+
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTA%20VI%20Logo.png?alt=media&token=c74d76cb-f7fe-4aa9-b5c5-4da9e20065f5`],
+
+      args,
     }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
 
           functions:[()=>{}],
 
