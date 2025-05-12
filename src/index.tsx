@@ -43,7 +43,7 @@ alignItems: "center",
  width: "100%",
  position: "absolute",
  zIndex: -1,
-height: "800px",
+height: "700px",
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FGTAbg.png?alt=media&token=807a5390-b6b3-4e90-ac71-f39e03c04da0`],
