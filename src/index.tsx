@@ -249,14 +249,11 @@ fontSize: "12px",
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+alignItems: "center",
+width: "300px",
+height: "100px",
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
