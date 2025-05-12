@@ -164,7 +164,8 @@ position: "absolute",
 top: "150px",
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -178,6 +179,24 @@ fontSize: "20px",
 
           children: [
             `ALMOST THERE!`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: "#fff",
+fontSize: "12px",
+}`
+          ],
+
+          children: [
+            `The game of the decade has arrived`
           ],
 
           args,
